@@ -1,0 +1,3 @@
+export const SEARCH_CHANGE = 'SEARCH_CHANGE'
+export const EVENTS_FETCHED = 'EVENTS_FETCHED'
+export const EVENTS_FAILED = 'EVENTS_FAILED'
