@@ -30,7 +30,7 @@ class HomeScreen extends Component {
 
   render() {
     const { visibleSearchBar } = this.state
-    const { navigation, event, data } = this.props
+    const { navigation, searchValue, data } = this.props
     const { scrollContainer, container } = styles
     return (
       <View>
@@ -41,7 +41,7 @@ class HomeScreen extends Component {
               iconRight='close'
               placeholder='Search'
               onChangeText={this._onChangeText}
-              value={event}
+              value={searchValue}
               onPressRight={this.clearSearch}
               onBlur={() => this.setState({visibleSearchBar: false})}
             /> :
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    event: state.search.event,
-    data: state.search.data
+    searchValue: state.search.searchValue,
+    data: state.events.data
   }
 }
 

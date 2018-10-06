@@ -1,16 +1,21 @@
 import {
-  SEARCH_CHANGE
+  EVENTS_FETCHED,
+  EVENTS_FAILED
 } from '../types'
 
 const INITIAL_STATE = {
-  searchValue: ''
+  data: []
 }
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case SEARCH_CHANGE:
+  case EVENTS_FETCHED:
     return {
       ...state,
-      searchValue: action.payload
+      data: action.payload
+    }
+  case EVENTS_FAILED:
+    return {
+      ...state
     }
   default: return state
   }
