@@ -1,3 +1,5 @@
+export const SIGNIN = 'SIGNIN'
+export const SIGNUP = 'SIGNUP'
 export const EVENT_HOME = 'EVENT_HOME'
 export const EVENT_DETAIL = 'EVENT_DETAIL'
 export const USER_SETTINGS = 'USER_SETTINGS'

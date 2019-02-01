@@ -22,7 +22,7 @@ HomeStack.navigationOptions = {
 }
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Событие',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -32,7 +32,7 @@ LinksStack.navigationOptions = {
 }
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: 'Аккаунт',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

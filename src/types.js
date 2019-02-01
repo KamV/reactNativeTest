@@ -1,3 +1,6 @@
+export const AUTH_USER = 'AUTH_USER'
+export const UNAUTH_USER = 'UNAUTH_USER'
+export const SIGNIN_FAILURE = 'SIGNIN_FAILURE'
 export const SEARCH_CHANGE = 'SEARCH_CHANGE'
 export const EVENTS_FETCHED = 'EVENTS_FETCHED'
 export const EVENTS_FAILED = 'EVENTS_FAILED'
